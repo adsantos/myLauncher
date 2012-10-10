@@ -113,6 +113,10 @@
     [super viewDidUnload];
 }
 
+- (void)dealloc {
+    _launcherView.delegate = nil;
+}
+
 #pragma mark - MyLauncherItem management
 
 -(BOOL)hasSavedLauncherItems {

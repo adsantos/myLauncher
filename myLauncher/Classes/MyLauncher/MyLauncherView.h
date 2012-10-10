@@ -49,7 +49,7 @@
 
 @property (nonatomic) BOOL editingAllowed;
 @property (nonatomic) NSInteger numberOfImmovableItems;
-@property (nonatomic, strong) id <MyLauncherViewDelegate> delegate;
+@property (nonatomic, unsafe_unretained) id <MyLauncherViewDelegate> delegate;
 @property (nonatomic, strong) MyLauncherScrollView *pagesScrollView;
 @property (nonatomic, strong) MyLauncherPageControl *pageControl;
 @property (nonatomic, strong) NSMutableArray *pages;
